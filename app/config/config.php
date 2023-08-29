@@ -14,3 +14,6 @@
     define("DB_USER", "root");
     define("DB_PASS", "root");
     define("DB_NAME", "share posts");
+
+    // App version
+    define("APPVERSION", "1.0.0");

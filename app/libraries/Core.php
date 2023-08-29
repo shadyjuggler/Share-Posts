@@ -12,7 +12,6 @@
 
         public function __construct () {
             $url = $this->getUrl();
-            
             // Check for controller of url: CONTROLLER/method/params
             if (file_exists("../app/controllers/" . ucwords($url[0]) . ".php")) {
                 // If exists, set as current controller
