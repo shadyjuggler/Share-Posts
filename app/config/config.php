@@ -4,13 +4,13 @@
     define("APPROOT", dirname(dirname(__FILE__)));
 
     // URL Root
-    define("URLROOT", "YOUR_URL");
+    define("URLROOT", "http://localhost/sharePosts");
 
     // Site Name
-    define("SITENAME", "YOUR_SITENAME");
+    define("SITENAME", "SharePosts");
 
     // DB Parameters
     define("DB_HOST", "localhost");
-    define("DB_USER", "YOUR_USER");
-    define("DB_PASS", "YOUR_PASS");
-    define("DB_NAME", "YOUR_DBNAME");
+    define("DB_USER", "root");
+    define("DB_PASS", "root");
+    define("DB_NAME", "share posts");
