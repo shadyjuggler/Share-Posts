@@ -45,10 +45,12 @@
                 switch(true) {
                     case is_int($value):
                         $type = PDO::PARAM_INT;
-                    case is_string($value):
-                        $type = PDO::PARAM_STR;
+                    case is_null($value):
+                        $type = PDO::PARAM_NULL;
                     case is_bool($value):
                         $type = PDO::PARAM_BOOL;
+                    default:
+                        $type = PDO::PARAM_STR;
                 }
             }
 
@@ -57,7 +59,7 @@
 
         // Execute the prepared statement
         public function execute () {
-            $this->statement->execute();
+            return $this->statement->execute();
         }
 
         // Get result set as array of objects

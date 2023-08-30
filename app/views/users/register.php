@@ -7,23 +7,23 @@
                 <form action="<?=URLROOT?>/users/register" method="POST">
                     <div class="form-group">
                         <label for="name">Name: <sup>*</sup></label>
-                        <input class="form-control form-control-lb <?=!empty($data["name_err"]) ? "is-invalid" : ""?>" name="name" type="text" value="<?=$data["name"]?>">
+                        <input class="form-control form-control-lb <?=!empty($data["name_error"]) ? "is-invalid" : ""?>" name="name" type="text" value="<?=$data["name"]?>">
                         <span class="invalid-feedback"><?=$data["name_error"]?></span>
                     </div>
                     <div class="form-group">
                         <label for="email">Email: <sup>*</sup></label>
-                        <input class="form-control form-control-lb <?=!empty($data["email_err"]) ? "is-invalid" : ""?>" name="email" type="email" value="<?=$data["email"]?>">
-                        <span class="email-feedback"><?=$data["email_error"]?></span>
+                        <input class="form-control form-control-lb <?=!empty($data["email_error"]) ? "is-invalid" : ""?>" name="email" type="email" value="<?=$data["email"]?>">
+                        <span class="invalid-feedback"><?=$data["email_error"]?></span>
                     </div>
                     <div class="form-group">
                         <label for="password">Password: <sup>*</sup></label>
-                        <input class="form-control form-control-lb <?=!empty($data["password_err"]) ? "is-invalid" : ""?>" name="password" type="password" value="<?=$data["password"]?>">
+                        <input class="form-control form-control-lb <?=!empty($data["password_error"]) ? "is-invalid" : ""?>" name="password" type="password" value="<?=$data["password"]?>">
                         <span class="invalid-feedback"><?=$data["password_error"]?></span>
                     </div>
                     <div class="form-group">
-                        <label for="confirm_pasword">Confirm pasword: <sup>*</sup></label>
-                        <input class="form-control form-control-lb <?=!empty($data["confirm_pasword_error"]) ? "is-invalid" : ""?>" name="confirm_pasword" type="passwrod" value="<?=$data["confirm_pasword"]?>">
-                        <span class="invalid-feedback"><?=$data["confirm_pasword_error"]?></span>
+                        <label for="confirm_password">Confirm pasword: <sup>*</sup></label>
+                        <input class="form-control form-control-lb <?=!empty($data["confirm_password_error"]) ? "is-invalid" : ""?>" name="confirm_password" type="password" value="<?=$data["confirm_password"]?>">
+                        <span class="invalid-feedback"><?=$data["confirm_password_error"]?></span>
                     </div>
 
                     <div class="row mt-3">

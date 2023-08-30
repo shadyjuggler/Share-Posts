@@ -7,12 +7,12 @@
                 <form action="<?=URLROOT?>/users/login" method="POST">
                     <div class="form-group">
                         <label for="email">Email: <sup>*</sup></label>
-                        <input class="form-control form-control-lb <?=!empty($data["email_err"]) ? "is-invalid" : ""?>" name="email" type="email" value="<?=$data["email"]?>">
-                        <span class="email-feedback"><?=$data["email_error"]?></span>
+                        <input class="form-control form-control-lb <?=!empty($data["email_error"]) ? "is-invalid" : ""?>" name="email" type="email" value="<?=$data["email"]?>">
+                        <span class="invalid-feedback"><?=$data["email_error"]?></span>
                     </div>
                     <div class="form-group">
                         <label for="password">Password: <sup>*</sup></label>
-                        <input class="form-control form-control-lb <?=!empty($data["password_err"]) ? "is-invalid" : ""?>" name="password" type="password" value="<?=$data["password"]?>">
+                        <input class="form-control form-control-lb <?=!empty($data["password_error"]) ? "is-invalid" : ""?>" name="password" type="password" value="<?=$data["password"]?>">
                         <span class="invalid-feedback"><?=$data["password_error"]?></span>
                     </div>
 
