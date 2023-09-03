@@ -5,6 +5,10 @@
         }
 
         public function index() {
+            if (isLoggedIn()) {
+                redirect("posts");
+            }
+
             $data = [
                 "title" => "SharePosts",
                 "descr" => "Simple Social Network built on the TraversyMVC PHP framework."
