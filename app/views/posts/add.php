@@ -13,7 +13,7 @@
                 <span class="invalid-feedback"><?=$data["title_error"]?></span>
             </div>
             <div class="form-group">
-                <label for="body">Password: <sup>*</sup></label>
+                <label for="body">Text: <sup>*</sup></label>
                 <textarea class="form-control form-control-lb <?=!empty($data["body_error"]) ? "is-invalid" : ""?>" name="body" type="text">
                     <?=$data["body"]?>
                 </textarea>
