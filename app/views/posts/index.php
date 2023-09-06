@@ -18,7 +18,7 @@
                 Written by <?=$post->name?> on <?=$post->postCreated?>
             </div>
             <p class="card-text"><?=$post->body?></p>
-        <a href="<?=URLROOT?>/post/show/<?=$post->postId?>" class="btn btn-dark">More</a>
+        <a href="<?=URLROOT?>/posts/show/<?=$post->postId?>" class="btn btn-dark">More</a>
     </div>
     <?php endforeach; ?>
 <?php require APPROOT . "/views/inc/footer.php";?>
